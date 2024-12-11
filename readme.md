@@ -28,8 +28,8 @@ There shouldn't be an exception thrown. This is what I observe on Android.
 2. Click the back button in the top left.
 3. Click on the "Go to Map Page' button again. You will notice a pop-up appears notifying you of the error that occurred when attempting to navigate to the map page.
 4. Click on the "Go to Map Page' button again. You should successfully navigate to the map page.
-5. Click the back button in the top left again. You will notice several error messages appear. The source of these errors is the 'MapElements.Add' call in the 'DrawPolygon' method 'in MapPage.xaml.cs'.
-6. Comment out the call to 'DrawAll' in the OnAppearing method of 'MapPage.xaml.cs' and re-run the application. You should notice that no errors occur.
+5. Click the back button in the top left again. You will notice several error messages appear. The source of these errors is the 'MapElements.Add' call in the 'DrawPolygon' method in 'MapPage.xaml.cs'.
+6. Comment out the call to 'DrawAll' in the OnAppearing method of 'MapPage.xaml.cs' and re-run the application. You should notice that no errors occur. This is because the 'MapElements.Add' method is no longer called.
 
 # Workaround
 
