@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="map_crash_tester.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:map_crash_tester"
+    Shell.FlyoutBehavior="Disabled"
+    Title="map_crash_tester"
+    Shell.BackgroundColor="Black"
+>
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" 
+    />
+
+    <ShellContent
+        Title="Map Page"
+        ContentTemplate="{DataTemplate local:MapPage}"
+        Route="MapPage" 
+    />
+
+</Shell>
